@@ -16,12 +16,37 @@ namespace PizzaStore.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            PizzaViewModel pizza = new PizzaViewModel()
-            {
+        List<PizzaViewModel> pizza = new List<PizzaViewModel>() {
+            new PizzaViewModel {
                 ID = 1,
                 Name = "Vegetarian",
                 Price = 10,
                 ImageURL = "/images/Pizzas/Vegetarian.png"
+            },
+            new PizzaViewModel {
+                ID = 2,
+                Name = "Seafood",
+                Price = 10,
+                ImageURL = "/images/Pizzas/Seafood.png"
+            },
+            new PizzaViewModel {
+                ID = 3,
+                Name = "Pepperoni",
+                Price = 13,
+                ImageURL = "/images/Pizzas/Pepperoni.png"
+            },
+            new PizzaViewModel {
+                ID = 4,
+                Name = "Meat Feast",
+                Price = 15,
+                ImageURL = "/images/Pizzas/MeatFeast.png"
+            },
+            new PizzaViewModel {
+                ID = 4,
+                Name = "Hawaiian",
+                Price = 15,
+                ImageURL = "/images/Pizzas/Hawaiian.png"
+            },
             };
 
             return View(pizza);

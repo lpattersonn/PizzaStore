@@ -19,48 +19,48 @@ body {
 
 /* General */
 h1 {
-    font-size: 4.7rem;
-    text-transform: uppercase;
+  font-size: 4.7rem;
+  text-transform: uppercase;
 }
 
 .row {
-padding-bottom: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
 }
 
 /* Heading */
 
 .grid-column-2 {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .heading-image-img {
-    max-width: 540px;
-    height: auto;
-    object-fit: cover;
+  max-width: 540px;
+  height: auto;
+  object-fit: cover;
 }
 
 .pizza {
-    box-shadow: 10px 10px 10px 10px rgb(10 51 17/ 10%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    padding: 20px;
+  box-shadow: 10px 10px 10px 10px rgb(10 51 17/ 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 30px;
 }
 
 .pizza:hover {
-   margin: 10px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .pizza-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .pizza-title {
-    margin: 10px 0;
+  margin: 10px 0;
 }
-

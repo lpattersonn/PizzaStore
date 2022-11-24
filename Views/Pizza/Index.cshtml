@@ -1,4 +1,4 @@
-﻿@model PizzaStore.Models.PizzaViewModel
+﻿@model List<PizzaViewModel>
 
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -10,18 +10,20 @@
     <div class="wrap d-grid grid-column-2">
         <h1>Enjoy Your Pizza In Town</h1>
         <div class="heading-image" >
-            <img class="heading-image-img" src="~/images/Pizzas/Create.png" />          
+            <img class="heading-image-img" src="/images/Pizzas/Create.png" />          
         </div>
     </div>
 </section>
 <section class="row body">
+@foreach (var pizza in Model) {
     <div class="pizza">
-        <img class="pizza-img" src=@Model.ImageURL />
-        <p class="pizza-title" >@Model.Name</p>
-        <p>$@Model.Price</p>
+        <img class="pizza-img" src=@pizza.ImageURL />
+        <p class="pizza-title" >@pizza.Name</p>
+        <p>$@pizza.Price</p>
         <form>
             <button class="btn btn-primary" type="submit">Add To Cart</button>
         </form>
     </div>
+}
 </section>
 
